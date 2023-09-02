@@ -1,0 +1,94 @@
+.navbar {
+  width: 100%;
+  background-color: #1b1c2deb;
+  backdrop-filter: blur(20px);
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+/* SWICTH */
+/* .checkbox-wrapper-54 {
+  width: 100%;
+} */
+.checkbox-wrapper-54 input[type="checkbox"] {
+  visibility: hidden;
+  display: none;
+}
+.checkbox-wrapper-54 *,
+.checkbox-wrapper-54 ::after,
+.checkbox-wrapper-54 ::before {
+  box-sizing: border-box;
+}
+.checkbox-wrapper-54 .switch {
+  --width-of-switch: 2.5vw;
+  --height-of-switch: 1.5vw;
+  --size-of-icon: 1vw;
+  --slider-offset: 0.3vw;
+  position: relative;
+  width: var(--width-of-switch);
+  height: var(--height-of-switch);
+  display: inline-block;
+}
+/* The slider */
+.checkbox-wrapper-54 .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #efead6;
+  transition: 0.3s;
+  border-radius: 30px;
+}
+.checkbox-wrapper-54 .slider:before {
+  position: absolute;
+  content: "";
+  height: var(--size-of-icon, 1.4em);
+  width: var(--size-of-icon, 1.4em);
+  border-radius: 20px;
+  left: var(--slider-offset, 0.3em);
+  top: 50%;
+  transform: translateY(-50%);
+  background: linear-gradient(40deg, #fe7e30, #ff7801 70%);
+  transition: 0.4s;
+}
+.checkbox-wrapper-54 input:checked + .slider {
+  background-color: #27313a;
+}
+.checkbox-wrapper-54 input:checked + .slider:before {
+  left: calc(100% - (var(--size-of-icon, 1.4em) + var(--slider-offset, 0.3em)));
+  background: #303136;
+  box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
+}
+/* SWICTH_END */
+
+/* MEDIA QUERY */
+@media screen and (min-width: 1024px) {
+  .navbar_b_main_div {
+    display: none;
+  }
+  .navbar_c_main_div {
+    display: none;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 481px) {
+  .navbar_a_main_div {
+    display: none;
+  }
+  .navbar_c_main_div {
+    display: none;
+  }
+}
+@media screen and (max-width: 481px) {
+  .navbar_a_main_div {
+    display: none;
+  }
+  .navbar_b_main_div {
+    display: none;
+  }
+}
+/*  */

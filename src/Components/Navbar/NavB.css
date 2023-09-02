@@ -1,0 +1,86 @@
+/* NAV B */
+.navbar_b_main_div {
+  margin: auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  padding: calc(1em) 0;
+}
+
+.navB_logo {
+  width: calc(2em);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid red; */
+}
+.navB_ham {
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  /* border: 1px solid red; */
+}
+.ham_menu {
+  color: #00ff00;
+  position: absolute;
+  top: 55px;
+  width: 200px;
+  /* right: -100px; */
+  padding: 1rem 0;
+  background-color: #1b1c2dee;
+
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border-radius: 10px;
+  transition: all 900ms cubic-bezier(0.9, 0, 0.33, 1);
+  animation: fadeIn 100ms ease-out backwards;
+  backdrop-filter: blur(100px);
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateX(250px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.nav_b_redir_link_container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+.nav_b_redir_link_container:hover {
+  background-color: #00ff0012;
+}
+.nav_b_redir_link {
+  margin-left: 20px;
+}
+/* ELLIPSIS */
+.ellipsis {
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+
+  transition: 0.35s ease;
+}
+.ellipsis:hover {
+  transition: 0.35s ease-in-out;
+}
+.ellipsis:hover {
+  background-color: #b1efb113;
+}
+.icons_ham_menu {
+  margin-left: 15px;
+  font-size: 1.5rem;
+}

@@ -1,0 +1,69 @@
+.git_stats_main_container {
+  margin-top: 15rem;
+  /* border: 1px solid red; */
+}
+
+.git_calender {
+  width: 90%;
+  max-width: 1247px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  color: #00ff00;
+  margin-bottom: 5rem;
+  padding: 3.5rem 0 2rem 0;
+  background-color: #212237;
+  box-shadow: rgba(0.2, 0.2, 0.2, 0.4) 2px 2px 4px,
+    rgba(0.2, 0.2, 0.2, 0.3) 0px 7px 13px -3px,
+    rgba(0.1, 0.1, 0.1, 0.2) 0px -3px 0px inset;
+  border-radius: 10px;
+}
+.git_heading {
+  color: #00ff00;
+  width: 90%;
+  max-width: 1247px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+.git_stats_streaks {
+  width: 90%;
+  margin: auto;
+  max-width: 1247px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 15rem;
+  align-items: center;
+}
+
+.git_card > img {
+  width: 100%;
+  box-shadow: rgba(0.2, 0.2, 0.2, 0.4) 2px 2px 4px,
+    rgba(0.2, 0.2, 0.2, 0.3) 0px 7px 13px -3px,
+    rgba(0.1, 0.1, 0.1, 0.2) 0px -3px 0px inset;
+  border-radius: 10px;
+}
+/* MEDIA QUERY */
+@media screen and (max-width: 1024px) and (min-width: 481px) {
+  .git_stats_streaks {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .git_calender {
+    padding: 1rem 1rem;
+  }
+}
+@media screen and (max-width: 481px) {
+  .git_calender {
+    margin-bottom: 2rem;
+    padding: 1rem 1rem;
+  }
+  .git_stats_streaks {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .git_heading {
+    margin-bottom: 2rem;
+  }
+}

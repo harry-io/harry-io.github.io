@@ -1,0 +1,144 @@
+.hero_home {
+  width: 90%;
+  max-width: 1247px;
+  margin: auto;
+  margin-top: 8rem;
+  /* border: 1px solid orange; */
+  margin-bottom: 100px;
+  align-items: center;
+  padding: 5.8rem 0;
+}
+
+.hero_home_main {
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  grid-template-columns: repeat(2, 1fr);
+  width: 90%;
+  /* border: 1px solid red; */
+  margin: auto;
+  gap: 1%;
+}
+.hero_home_intro {
+  /* border: 1px solid rgb(188, 144, 144); */
+  transition: 0.35s ease-in-out;
+}
+
+.intro_name {
+  width: fit-content;
+  color: rgb(0, 0, 0);
+  margin-bottom: -2rem;
+  /* background: linear-gradient(100deg, #00ff00 70%, rgba(0, 95, 167, 0) 100%); */
+  padding: 0 1rem;
+  background-color: #00ff00;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  cursor: none;
+}
+.intro_name_b {
+  color: #00ff00;
+  /* margin-bottom: -1rem; */
+  font-size: 3.5em;
+  transition: 0.4s ease-out;
+  cursor: none;
+}
+.intro_title {
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  margin-top: -3.5rem;
+  transition: 0.4s ease-out;
+  cursor: none;
+  letter-spacing: 4px;
+}
+.about_me_btn {
+  background-color: #00ff0000;
+  height: 40px;
+  padding: 0 2rem;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  color: #00ff00;
+  border: 2px solid #00ff00;
+  transition: 0.4s ease-out;
+}
+.about_me_btn:hover {
+  background-color: #00ff00;
+  color: #000000;
+  border: 2px solid #00ff00;
+  transition: 0.3s ease-out;
+}
+.about_me_btn > a {
+  font-size: 1rem;
+}
+.profile_picture {
+  margin: auto;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile_picture > img {
+  width: 50%;
+}
+
+/* MEDIA QUERY */
+@media screen and (min-width: 1025px) {
+}
+@media screen and (max-width: 1024px) and (min-width: 481px) {
+  .hero_home_main {
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+  }
+  .about_me_btn {
+    margin: auto;
+  }
+  .hero_home_intro {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.35s ease-in-out;
+  }
+  .profile_picture > div:nth-child(1) > img {
+    width: 20%;
+  }
+  .intro_name {
+  }
+}
+@media screen and (max-width: 481px) {
+  .intro_name_b {
+    font-size: 2.5rem;
+  }
+
+  .hero_home_main {
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+  }
+  .about_me_btn {
+    margin: auto;
+  }
+  .hero_home {
+    margin-top: 1rem;
+    margin-bottom: 100px;
+    align-items: center;
+    padding: 8.8rem 0 5rem 0;
+  }
+  .intro_title {
+    width: 100%;
+    letter-spacing: 0;
+    font-size: 1.2rem;
+    margin-top: -2rem;
+    letter-spacing: 2px;
+  }
+  .hero_home_intro {
+    margin-top: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
