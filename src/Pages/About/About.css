@@ -25,6 +25,7 @@
 .about_heading > h1 {
   font-size: 3rem;
   border-radius: 10px;
+  background: -webkit-linear-gradient(var(--color-c), #333);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
