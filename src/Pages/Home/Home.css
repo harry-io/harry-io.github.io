@@ -3,7 +3,6 @@
   max-width: 1247px;
   margin: auto;
   margin-top: 8rem;
-  /* border: 1px solid orange; */
   margin-bottom: 100px;
   align-items: center;
   padding: 5.8rem 0;
@@ -15,35 +14,34 @@
   justify-content: space-between;
   grid-template-columns: repeat(2, 1fr);
   width: 90%;
-  /* border: 1px solid red; */
   margin: auto;
   gap: 1%;
 }
 .hero_home_intro {
-  /* border: 1px solid rgb(188, 144, 144); */
   transition: 0.35s ease-in-out;
 }
 
 .intro_name {
   width: fit-content;
-  color: rgb(0, 0, 0);
+  color: var(--color-d);
   margin-bottom: -2rem;
-  /* background: linear-gradient(100deg, #00ff00 70%, rgba(0, 95, 167, 0) 100%); */
-  padding: 0 1rem;
-  background-color: #00ff00;
+  background-color: var(--color-b);
   box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
     rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
   cursor: none;
+  padding: 5px 1rem;
+  border-radius: 3px;
 }
 .intro_name_b {
-  color: #00ff00;
-  /* margin-bottom: -1rem; */
+  color: var(--color-c);
   font-size: 3.5em;
   transition: 0.4s ease-out;
   cursor: none;
 }
 .intro_title {
-  color: rgb(255, 255, 255);
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 1.5rem;
   margin-top: -3.5rem;
   transition: 0.4s ease-out;
@@ -51,23 +49,21 @@
   letter-spacing: 4px;
 }
 .about_me_btn {
-  background-color: #00ff0000;
+  background-color: var(--color-b);
   height: 40px;
   padding: 0 2rem;
-  border-radius: 2px;
+  border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
   border: none;
   cursor: pointer;
-  color: #00ff00;
-  border: 2px solid #00ff00;
+  color: var(--color-c);
   transition: 0.4s ease-out;
 }
 .about_me_btn:hover {
-  background-color: #00ff00;
-  color: #000000;
-  border: 2px solid #00ff00;
+  background-color: var(--color-c);
+  color: var(--color-b);
   transition: 0.3s ease-out;
 }
 .about_me_btn > a {
@@ -75,14 +71,15 @@
 }
 .profile_picture {
   margin: auto;
-  /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.profile_picture > img {
+.profile_picture > span > img {
   width: 50%;
+  border-radius: 50%;
+  background-color: var(--color-c);
 }
 
 /* MEDIA QUERY */

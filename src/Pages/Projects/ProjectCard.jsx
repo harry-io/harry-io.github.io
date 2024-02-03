@@ -1,8 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
-// import { GoLinkExternal } from "react-icons/go";
-// import { FiGithub } from "react-icons/fi";
-import Carousel from "../../Components/Carousel";
 
 const ProjectCard = ({ project }) => {
   return (
@@ -10,7 +6,6 @@ const ProjectCard = ({ project }) => {
       {/*  */}
       <h1 className="project_number_b">{project.id}</h1>
       <div className="project_card_div_a">
-        {/* <Carousel img={project.img} /> */}
         <img src={project.img[0]} alt="alt" />
       </div>
       {/*  */}

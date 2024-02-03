@@ -9,6 +9,7 @@ import { TbListDetails } from "react-icons/tb";
 import { FaSuperpowers } from "react-icons/fa";
 import { MdWorkspacesOutline } from "react-icons/md";
 import { RiMessageLine } from "react-icons/ri";
+import Logo from "../Logo/Logo";
 const links = [
   { path: "home", text: "HOME", icon: <GoHome /> },
   { path: "about", text: "ABOUT", icon: <TbListDetails /> },
@@ -24,18 +25,19 @@ const NavC = () => {
       {/* ------------------------- */}
       <div className="nav_c_inner">
         <div className="navC_logo">
-          <img
+          {/* <img
             style={{ width: "100%" }}
             src="https://i.ibb.co/7nhdFP6/Logo.png"
             alt="logo"
-          />
+          /> */}
+          <Logo size={45} />
         </div>
         <div className="navC_ham">
           <FontAwesomeIcon
             onClick={() => setShow(!show)}
             className="ellipsis"
             icon={faEllipsis}
-            style={{ color: "#00ff00" }}
+            style={{ color: "var(--color-c)" }}
           />
           {show && (
             <div className="ham_menu">
@@ -72,15 +74,14 @@ const NavC = () => {
                     <button
                       id="resume-button-1"
                       style={{
-                        border: "1px solid #00ff00",
-                        background: "inherit",
-                        borderRadius: "5px",
+                        border: "none",
+                        background: "var(--color-b)",
                         padding: "8px 15px",
-                        boxShadow:
-                          " rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px",
                         fontWeight: 500,
                         cursor: "pointer",
-                        color: "#00ff00",
+                        color: "var(--color-c)",
+                        boxShadow:
+                          "rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px",
                       }}
                       onClick={() =>
                         window.open(

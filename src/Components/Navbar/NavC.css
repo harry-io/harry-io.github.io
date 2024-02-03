@@ -11,11 +11,9 @@
   justify-content: space-between;
 }
 .navC_logo {
-  width: calc(2em);
   display: flex;
   align-items: center;
   justify-content: center;
-  /* border: 1px solid red; */
 }
 .navC_ham {
   width: calc(2em);
@@ -27,19 +25,17 @@
 /* ELLIPSIS */
 /*  */
 .ham_menu {
-  color: #00ff00;
+  color: var(--color-c);
   position: absolute;
   top: 55px;
   width: 230px;
   right: 1px;
   padding: 1rem 0;
-  background-color: #1b1c2dee;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  background: var(--color-e-a);
+  backdrop-filter: blur(10px);
   border-radius: 10px;
   transition: all 900ms cubic-bezier(0.9, 0, 0.33, 1);
-  animation: fadeIn 100ms ease-out backwards;
-  backdrop-filter: blur(100px);
+  animation: fadeIn 250ms ease-out backwards;
 }
 @keyframes fadeIn {
   from {
@@ -59,7 +55,7 @@
   padding: 8px 0;
 }
 .nav_b_redir_link_container:hover {
-  background-color: #00ff0012;
+  background-color: var(--color-b);
 }
 .nav_b_redir_link {
   margin-left: 15px;
@@ -76,5 +72,5 @@
   transition: 0.35s ease-in-out;
 }
 .ellipsis:hover {
-  background-color: #b1efb113;
+  background-color: var(--color-b);
 }

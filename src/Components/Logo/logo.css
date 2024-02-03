@@ -1,0 +1,40 @@
+.logo {
+  border-radius: 50%;
+  background-color: var(--color-c);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.logoInner {
+  width: 60%;
+  margin: auto;
+}
+.inner_divs {
+}
+
+.inner_comp_a {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.inner_comp_a > div:not(:nth-child(2)) {
+  border: 1px solid var(--color-b);
+  background-color: var(--color-b);
+  height: 8px;
+}
+.inner_comp_b {
+  border: 1px solid var(--color-b);
+  background-color: var(--color-b);
+  width: 105%;
+  height: 8px;
+}
+.inner_comp_c {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 4%;
+}
+.inner_comp_c > div:not(:nth-child(2)) {
+  border: 1px solid var(--color-b);
+  background-color: var(--color-b);
+  height: 8px;
+}

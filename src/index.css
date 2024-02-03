@@ -1,24 +1,33 @@
+:root {
+  --color-a: #000000;
+  --color-b: #1a1a1a;
+  --color-c: #76b900;
+  --color-c-a: #75b90000;
+  --color-c-b: #75b90013;
+  --color-d: #ffffff;
+  --color-e: #07070781;
+  --color-e-a: #070707;
+}
 body {
   margin: 0;
   padding: 0;
   font-family: "Questrial", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #1b1c2d;
-  /* background-color: transparent; */
+  background-color: var(--color-a);
 }
 ::-webkit-scrollbar {
   width: 10px;
 }
 ::-webkit-scrollbar-thumb {
-  background: #00ff00;
+  background: var(--color-c);
 }
 ::-webkit-scrollbar-button {
-  background: #00ff00;
+  background: var(--color-c);
   height: 15px;
 }
 ::-webkit-scrollbar-track {
-  background: #1b1c2d;
+  background: var(--color-a);
 }
 html {
   scroll-behavior: smooth;

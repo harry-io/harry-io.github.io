@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css";
 import { Link } from "react-scroll";
+import Image from "../../Components/Common/Image";
 
 const Home = () => {
   return (
@@ -8,10 +9,15 @@ const Home = () => {
       <div className="hero_home_main">
         {/*  */}
         <div className="profile_picture">
-          <img
+          {/* <img
             className="home-img"
-            src="https://i.ibb.co/gjr3MNt/pfp.png"
+            src="https://i.ibb.co/7bWVC59/prof-pic.png"
             alt="pfp"
+          /> */}
+          <Image
+            alt={"pfp"}
+            src={"https://i.ibb.co/7bWVC59/prof-pic.png"}
+            className={"home-img"}
           />
         </div>
         {/*  */}

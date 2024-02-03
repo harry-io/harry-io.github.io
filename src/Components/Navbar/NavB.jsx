@@ -10,6 +10,7 @@ import { MdWorkspacesOutline } from "react-icons/md";
 import { RiMessageLine } from "react-icons/ri";
 
 import { Link } from "react-scroll";
+import Logo from "../Logo/Logo";
 const links = [
   { path: "home", text: "HOME", icon: <GoHome />, class: "" },
   { path: "about", text: "ABOUT", icon: <TbListDetails /> },
@@ -24,18 +25,19 @@ const NavB = () => {
     <div className="navbar_b_main_div">
       {/* ------------------------- */}
       <div className="navB_logo">
-        <img
+        {/* <img
           onClick={() => (window.location.href = "harry-io.github.io")}
           style={{ width: "100%", cursor: "pointer" }}
           src="https://i.ibb.co/7nhdFP6/Logo.png"
           alt="logo"
-        />
+        /> */}
+        <Logo size={45} />
       </div>
       <div className="navB_ham" onClick={() => setShow(!show)}>
         <FontAwesomeIcon
           className="ellipsis"
           icon={faEllipsis}
-          style={{ color: "#00ff00" }}
+          style={{ color: "var(--color-c)" }}
         />
         {show && (
           <div className="ham_menu">
@@ -73,15 +75,14 @@ const NavB = () => {
                   <button
                     id="resume-button-1"
                     style={{
-                      border: "1px solid #00ff00",
-                      background: "inherit",
-                      borderRadius: "5px",
+                      border: "none",
+                      background: "var(--color-b)",
                       padding: "8px 15px",
-                      boxShadow:
-                        " rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px",
                       fontWeight: 500,
                       cursor: "pointer",
-                      color: "#00ff00",
+                      color: "var(--color-c)",
+                      boxShadow:
+                        "rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px",
                     }}
                     onClick={() =>
                       window.open(

@@ -18,7 +18,6 @@ const GitCalender = () => {
           username="harry-io"
           hideTotalCount
           fontSize={16}
-          color="#00ff00"
           blockRadius={2}
           showWeekdayLabels={false}
           hideColorLegend={true}

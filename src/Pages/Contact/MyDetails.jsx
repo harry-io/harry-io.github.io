@@ -13,9 +13,11 @@ const MyDetails = () => {
         <h2>Contact info</h2>
       </div>
       {/*  */}
-      <div>
+      <div className="my_personal_detailss">
         <div className="my_location">
-          <HiLocationMarker style={{ cursor: "pointer" }} />
+          <HiLocationMarker
+            style={{ cursor: "pointer", color: "var(--color-c)" }}
+          />
           <p style={{ cursor: "pointer" }}>Patna, Bihar</p>
         </div>
         <div
@@ -23,7 +25,9 @@ const MyDetails = () => {
           id="contact-phone"
           onClick={() => (window.location.href = "tel:+917632965249")}
         >
-          <BsFillPhoneFill style={{ cursor: "pointer" }} />
+          <BsFillPhoneFill
+            style={{ cursor: "pointer", color: "var(--color-c)" }}
+          />
           <p style={{ cursor: "pointer" }}>+91 7632965249</p>
         </div>
         {/*  */}
@@ -32,7 +36,9 @@ const MyDetails = () => {
           id="contact-email"
           onClick={() => (window.location.href = "mailto:r1ego9262@gmail.com")}
         >
-          <MdMarkEmailUnread style={{ cursor: "pointer" }} />
+          <MdMarkEmailUnread
+            style={{ cursor: "pointer", color: "var(--color-c)" }}
+          />
           <p style={{ cursor: "pointer" }}>r1ego9262@gmail.com</p>
         </div>
         {/*  */}
@@ -41,7 +47,7 @@ const MyDetails = () => {
             <div>
               <FaLinkedinIn
                 id="contact-linkedin"
-                style={{ cursor: "pointer" }}
+                style={{ cursor: "pointer", color: "var(--color-c)" }}
                 onClick={() =>
                   (window.location.href =
                     "https://www.linkedin.com/in/harikesh-kumar-572a9923a/")
@@ -53,7 +59,7 @@ const MyDetails = () => {
             <div>
               <FaGithubAlt
                 id="contact-github"
-                style={{ cursor: "pointer" }}
+                style={{ cursor: "pointer", color: "var(--color-c)" }}
                 onClick={() =>
                   (window.location.href = "https://github.com/harry-io")
                 }

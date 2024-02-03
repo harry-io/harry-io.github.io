@@ -18,14 +18,13 @@
   width: 50%;
   display: flex;
   gap: 2%;
-  /* border: 1px solid red; */
   align-items: center;
   justify-content: space-around;
 }
 .navbar_part_b > div > a {
   text-decoration: none;
   font-size: 0.9em;
-  color: #00ff00;
+  color: var(--color-c);
 }
 
 .navbar_part_b > div > a {
@@ -33,41 +32,40 @@
   padding-bottom: 5px;
   position: relative;
 }
-.navbar_part_b > div > a::before {
+.navbar_part_b > div > a:not(:nth-last-child()):before {
   content: "";
   position: absolute;
   left: 0;
   bottom: 0;
   width: 0;
   height: 1px;
-  color: #00ff00;
-  background-color: #00ff00;
+  color: var(--color-c);
+  background-color: var(--color-c);
   transition: 0.65s ease-out;
 }
 .navbar_part_b > div > a:hover::before {
   width: 100%;
 }
 .resume_btn {
-  color: #00ff00;
+  color: var(--color-c);
 }
 .resume_btn > button {
   background: none;
   padding: 0.3rem 0.5rem;
-  border: 1px solid #00ff00;
-  color: #00ff00;
+  color: var(--color-c);
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   border-radius: 2px;
 }
 .resume_btn > button:hover {
-  color: #000000;
-  background-color: #00ff00;
+  color: var(--color-b);
+  background-color: var(--color-c);
   padding: 0.5rem 0.5rem;
   transition: all 0.3s ease-in-out;
 }
 /* RESUME BTN B */
 .resume_btn_b {
-  color: #00ff00;
+  color: var(--color-c);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -78,16 +76,15 @@
   width: 80%;
   background: none;
   padding: 0.3rem 1rem;
-  border: 2px solid #00ff00;
-  color: #00ff00;
+  color: var(--color-c);
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   border-radius: 2px;
   height: 42px;
 }
 .resume_btn_b > button:hover {
-  color: #000000;
-  background-color: #00ff00;
+  color: var(--color-b);
+  background-color: var(--color-c);
   transition: all 0.3s ease-in-out;
 }
 .ham_menu_close {
@@ -106,8 +103,7 @@
   cursor: pointer;
 }
 .close_icon:hover {
-  background-color: #00ff000b;
-
+  background-color: var(--color-b);
   transition: all 0.3s ease-in-out;
 }
 /*  */

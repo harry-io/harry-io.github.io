@@ -1,10 +1,9 @@
 .footer_main_container {
-  /* border: 1px solid red; */
   bottom: 0;
-  /* background-color: #00ff00; */
   padding: 2rem 0;
-  background-color: #212237;
-  color: #00ff00;
+  background-color: var(--color-a);
+  border-top: 1px solid var(--color-b);
+  color: var(--color-c);
   box-shadow: rgba(0.2, 0.2, 0.2, 0.4) 2px 2px 4px,
     rgba(0.2, 0.2, 0.2, 0.3) 0px 7px 13px -3px,
     rgba(0.1, 0.1, 0.1, 0.2) 0px -3px 0px inset;

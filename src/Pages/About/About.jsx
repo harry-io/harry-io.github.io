@@ -1,7 +1,6 @@
 import { FaLinkedinIn, FaGithubAlt } from "react-icons/fa";
 import React from "react";
 import "./About.css";
-import { GrDownload } from "react-icons/gr";
 import { Tooltip } from "@mui/material";
 
 const About = () => {
@@ -28,7 +27,15 @@ const About = () => {
               <Tooltip title="My Linkedin">
                 <div>
                   <FaLinkedinIn
-                    style={{ cursor: "pointer" }}
+                    style={{
+                      cursor: "pointer",
+                      background: "var(--color-b)",
+                      color: "var(--color-c)",
+                      padding: "0.5rem",
+                      borderRadius: "50%",
+                      boxShadow:
+                        "rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px",
+                    }}
                     onClick={() =>
                       (window.location.href = "https://github.com/harry-io")
                     }
@@ -38,7 +45,15 @@ const About = () => {
               <Tooltip title="My GitHub">
                 <div>
                   <FaGithubAlt
-                    style={{ cursor: "pointer" }}
+                    style={{
+                      cursor: "pointer",
+                      background: "var(--color-b)",
+                      color: "var(--color-c)",
+                      padding: "0.5rem",
+                      borderRadius: "50%",
+                      boxShadow:
+                        "rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px",
+                    }}
                     onClick={() =>
                       (window.location.href = "https://github.com/harry-io")
                     }
@@ -56,13 +71,13 @@ const About = () => {
                   id="resume-button-1"
                   style={{
                     border: "none",
-                    background: "inherit",
-                    borderRadius: "5px",
+                    background: "var(--color-b)",
                     padding: "8px 15px",
-                    boxShadow:
-                      " rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px",
                     fontWeight: 500,
                     cursor: "pointer",
+                    color: "var(--color-c)",
+                    boxShadow:
+                      "rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px",
                   }}
                   onClick={() =>
                     window.open(

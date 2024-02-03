@@ -3,6 +3,7 @@ import { HiDownload } from "react-icons/hi";
 import { MdOutlineOpenInNew } from "react-icons/md";
 
 import "./NavA.css";
+import Logo from "../Logo/Logo";
 const links = [
   { path: "home", text: "HOME", class: "nav-link home" },
   { path: "about", text: "ABOUT", class: "nav-link about" },
@@ -16,12 +17,13 @@ const NavA = () => {
     <div className="navbar_a_main_div">
       {/* ------------------------- */}
       <div className="navbar_part_a">
-        <img
+        {/* <img
           className="nav_logo"
           style={{ width: "100%" }}
           src="https://i.ibb.co/7nhdFP6/Logo.png"
           alt="logo"
-        />
+        /> */}
+        <Logo size={45} />
       </div>
       <div className="navbar_part_b">
         {/*  */}
@@ -101,19 +103,19 @@ const NavA = () => {
           <a
             href="https://drive.google.com/uc?export=download&id=1X_gCg31PVf4WjuU3J3xmNjyCoUNDgfic"
             download
+            style={{}}
           >
             <button
               id="resume-button-1"
               style={{
-                border: "1px solid #00ff00",
-                background: "inherit",
-                borderRadius: "5px",
+                border: "none",
+                background: "var(--color-b)",
                 padding: "8px 15px",
-                boxShadow:
-                  " rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px",
                 fontWeight: 500,
                 cursor: "pointer",
-                color: "#00ff00",
+                color: "var(--color-c)",
+                boxShadow:
+                  "rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px",
               }}
               onClick={() =>
                 window.open(

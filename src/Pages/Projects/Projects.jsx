@@ -142,7 +142,10 @@ const Projects = () => {
     <div id="projects" className="projects_main_container">
       <div className="projects_heading">
         <h2>PROJECTS</h2>
-        <MdWorkspacesOutline fill="#00ff00" style={{ fontSize: "2rem" }} />
+        <MdWorkspacesOutline
+          fill="var(--color-c)"
+          style={{ fontSize: "2rem" }}
+        />
       </div>
       <div className="projects_main">
         {/*  */}
