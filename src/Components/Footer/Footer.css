@@ -15,6 +15,9 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  background: -webkit-linear-gradient(#eee, #9796965b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .footer_main_inner_container > div {
   width: 50%;

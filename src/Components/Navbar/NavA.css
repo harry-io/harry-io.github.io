@@ -32,7 +32,7 @@
   padding-bottom: 5px;
   position: relative;
 }
-.navbar_part_b > div > a:not(:nth-last-child()):before {
+.navbar_part_b > div > a::before {
   content: "";
   position: absolute;
   left: 0;

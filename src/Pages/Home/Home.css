@@ -24,13 +24,12 @@
 .intro_name {
   width: fit-content;
   color: var(--color-d);
-  margin-bottom: -2rem;
-  background-color: var(--color-b);
-  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
-    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  margin-bottom: -3rem;
   cursor: none;
-  padding: 5px 1rem;
-  border-radius: 3px;
+  padding: 5px 0;
+  background: -webkit-linear-gradient(#eee, #9796965b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .intro_name_b {
   color: var(--color-c);
@@ -52,7 +51,6 @@
   background-color: var(--color-b);
   height: 40px;
   padding: 0 2rem;
-  border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
